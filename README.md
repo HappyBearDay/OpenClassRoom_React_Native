@@ -16,8 +16,8 @@ Two kinds of project :
 
 
 Project hierarchy : 
-    -  assets: Store ressources
-    -  .gitignore : if we use github
+    -  assets: Store ressources ?
+    -  .gitignore : if the project is stored on a git
     -  watchmanconfig : Improve application performances
     -  babel.config : Javascript compiler
     -  node_modules : contains all modules of the current application
