@@ -1,0 +1,40 @@
+1.
+
+- React native was created by facebook
+
+- Native app is developped one time for each platforms.
+- Cross-platform app is developped only one time.
+
+- Native app is more efficient than cross-platforms app.
+- Native app looks like smartphone app more than cross-platforms app.
+
+- React Native enables to develop cross-platforms app.
+
+- React Native uses Javascript
+
+- React Native uses native components to create views.
+
+- CRNA doesn't enable to use native code.
+
+- To create, to develop, to execute a CRNA app, we have to install:
+    - Node.js
+    - Expo
+    - text editor
+
+- Javascript doesn't need to be compiled
+
+- We can force the application reloading.
+
+
+2.1
+
+component is a graphc element.
+Split, group and reuse.
+a view is a component, text is a component.
+
+2 kinds of component : 
+    - React Native components ( Views, button, text...)
+        https://facebook.github.io/react-native/docs/components-and-apis.html#basic-components
+    - Custome components ( set of component )
+
+a component renders a graphic element.
