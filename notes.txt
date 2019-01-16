@@ -6,7 +6,7 @@
 - Cross-platform app is developped only one time.
 
 - Native app is more efficient than cross-platforms app.
-- Native app looks like smartphone app more than cross-platforms app.
+- Native app looks like mobile app more than cross-platforms app.
 
 - React Native enables to develop cross-platforms app.
 
@@ -26,7 +26,7 @@
 - We can force the application reloading.
 
 
-2.1
+2.1 Components
 
 component is a graphc element.
 Split, group and reuse.
@@ -35,6 +35,47 @@ a view is a component, text is a component.
 2 kinds of component : 
     - React Native components ( Views, button, text...)
         https://facebook.github.io/react-native/docs/components-and-apis.html#basic-components
+        React Native components are converted to native components.
+        
     - Custome components ( set of component )
 
 a component renders a graphic element.
+(render ~ return / send )
+
+JSX is an extention of Javascript created by Facebook.
+component is created by JSX.
+JSX is easier than HTML.
+
+
+2.2 Improve the Design of our applications.
+
+A style is an attribut of a component.
+
+React Native Styling Cheat Sheet : 
+    -  https://github.com/vhpoet/react-native-styling-cheat-sheet
+
+We can only add styles on React Native components. 
+
+StyleSheet improves the performance of our applications.
+
+2.3 FLexBox
+
+Screen size managing.
+Dynamic size.
+Create views from the screen size and from others views.
+
+style flex :
+    - 0 : The component size depended of the size of the children components
+    - 1 : The component takes all available area, 
+          if the current component has siblings, 
+          the area is fairly shared
+    - x : The component takes x over n ( the size of parent ) of the the parent area.
+
+justifyContent is a vertical setting
+
+alignItems is an horizontal setting
+
+
+2.4 Props
+
+Props are proprieties appied to components.
