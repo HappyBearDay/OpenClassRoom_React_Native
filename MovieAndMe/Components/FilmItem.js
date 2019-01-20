@@ -5,6 +5,7 @@ import { StyleSheet, View,TextInput, Text ,Image} from 'react-native'
 
 class FilmItem extends React.Component {
   render() {
+    film = this.props.film;
     return (
       <View style={styles.main_container}>
         
@@ -17,20 +18,22 @@ class FilmItem extends React.Component {
           <View style={styles.header_container}>
           {/*TITLE*/}
               <View style={styles.title_container}>
-                  <Text style={styles.title_text}>Titre du film</Text>
+                  <Text style={styles.title_text}>{film.title}</Text>
               </View>
           {/*VOTE*/}
               <View style={styles.vote_container}>
-                  <Text style={styles.vote_text}>Vote</Text>
+                  <Text style={styles.vote_text}>{film.vote_average}</Text>
               </View>
           </View>
         {/*DESCRIPTION*/}
           <View style={styles.description_container}>   
-              <TextInput style={styles.description_text } numberOfLines={6}>Description</TextInput>
+              <Text style={styles.description_text } numberOfLines={6}>
+              {film.overview}
+              </Text>
           </View>
         {/*FOOTER*/}
           <View style={styles.footer_container}>
-            <TextInput style={styles.date_text}>Sorti le 00/00/0000</TextInput>
+            <TextInput style={styles.date_text}>Sorti le {film.release_date}</TextInput>
           </View>
 
         </View>

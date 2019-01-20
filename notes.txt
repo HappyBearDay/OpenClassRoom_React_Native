@@ -83,3 +83,8 @@ Props are proprieties appied to components.
 When, you use a flatlist,
 you have to be able to identify 
 each element of a list by his key.
+
+Props enable to set variables into components.
+
+
+2.5 State

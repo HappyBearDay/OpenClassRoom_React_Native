@@ -19,7 +19,8 @@ class Search extends React.Component {
             keyExtractor={(item) => item.id.toString()}
             //renderItem={({item}) => <TextInput>{item.title }</TextInput>}
             
-            renderItem={({item}) => <FilmItem/>}
+            
+            renderItem={({item}) => <FilmItem film = {item}/>}
             />
             </View>
 
