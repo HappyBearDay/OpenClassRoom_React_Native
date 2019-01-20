@@ -79,3 +79,7 @@ alignItems is an horizontal setting
 2.4 Props
 
 Props are proprieties appied to components.
+
+When, you use a flatlist,
+you have to be able to identify 
+each element of a list by his key.
