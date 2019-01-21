@@ -76,6 +76,11 @@ justifyContent is a vertical setting
 alignItems is an horizontal setting
 
 
+--- Handling of components --- 
+There are 2 ways to take hold of components:
+    - Props 
+    - States
+
 2.4 Props
 
 Props are proprieties appied to components.
@@ -85,6 +90,17 @@ you have to be able to identify
 each element of a list by his key.
 
 Props enable to set variables into components.
+Cons : 
+    - Props are defined by the parents components.
+    - Props can't be modified by the current component.
 
 
-2.5 State
+2.5 States
+
+States are enable to manage the current component's modifications.
+
+State is defined component's constructor.
+setstate => modify a state + reload the component
+if we don't need to reload the component, 
+it isn't a good idea to use a state, because to modify a state, 
+we have to reload the whole component.
