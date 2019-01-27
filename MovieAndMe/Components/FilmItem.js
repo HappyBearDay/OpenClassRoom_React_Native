@@ -2,15 +2,17 @@
 
 import React from 'react'
 import { StyleSheet, View,TextInput, Text ,Image} from 'react-native'
+import {getImageFromApi} from '../API/TMDBapi'
 
 class FilmItem extends React.Component {
   render() {
     film = this.props.film;
     return (
+      
       <View style={styles.main_container}>
         
         <Image style={styles.image} 
-        source={{uri: "image"}}
+        source={{uri: getImageFromApi(film.poster_path)}}
         />
         
         <View style={styles.content_container}>
@@ -33,11 +35,9 @@ class FilmItem extends React.Component {
           </View>
         {/*FOOTER*/}
           <View style={styles.footer_container}>
-            <TextInput style={styles.date_text}>Sorti le {film.release_date}</TextInput>
+            <Text style={styles.date_text}>Sorti le {film.release_date}</Text>
           </View>
-
         </View>
-
       </View>
     )
   }

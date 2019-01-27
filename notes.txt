@@ -104,3 +104,18 @@ setstate => modify a state + reload the component
 if we don't need to reload the component, 
 it isn't a good idea to use a state, because to modify a state, 
 we have to reload the whole component.
+
+
+
+2.6 Functions adding
+
+3 functions will be added : 
+    - Add loading
+        - 
+    - Check reseach with keyboard
+    - Display the movies' images
+        - Add the function getImageFromApi in TMDBapi.js
+        - Call getImageFromApi in FilmItem.js
+    
+
+

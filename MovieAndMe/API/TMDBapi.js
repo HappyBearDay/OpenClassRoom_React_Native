@@ -6,3 +6,9 @@ export function getFilmsFromApiWithSearchedText(text){
     .then((Response) => Response.json())
     .catch((error) => console.log(error))
 }
+
+// API/TMDBApi.js
+
+export function getImageFromApi (name) {
+    return 'https://image.tmdb.org/t/p/w300' + name
+  }
