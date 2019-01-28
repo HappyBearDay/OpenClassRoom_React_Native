@@ -105,17 +105,28 @@ if we don't need to reload the component,
 it isn't a good idea to use a state, because to modify a state, 
 we have to reload the whole component.
 
-
+State contains only parameters which influence the app's returned.
 
 2.6 Functions adding
-
-3 functions will be added : 
-    - Add loading
-        - 
+Add 3 functions : 
+    - Add loading indicator
+        - _DisplayLoading
+        - isLoading
     - Check reseach with keyboard
+        - add  the props onSubmitEditing into TextInput. 
     - Display the movies' images
         - Add the function getImageFromApi in TMDBapi.js
         - Call getImageFromApi in FilmItem.js
     
+2.7 setstate
+Set States is asynchrones.
 
+Infinite scrolling : 
+    - a ) ( FlatList props ) onEndReached  : Detect the of the data list
+        - the value is the length of the displayed FlatList part
+    - b ) this.state.films is Concatenatable with the news list of films.
+    - c ) the Second part of Set States is executed after the first.
+    
+
+3.1 ) Navigation
 
