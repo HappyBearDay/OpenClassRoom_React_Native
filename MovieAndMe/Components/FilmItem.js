@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { StyleSheet, View,TextInput, Text ,Image} from 'react-native'
-import {getImageFromApi} from '../API/TMDBapi'
+import {getImageFromApi} from '../API/TMDBApi'
 
 class FilmItem extends React.Component {
   render() {
