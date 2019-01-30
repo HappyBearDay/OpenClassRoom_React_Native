@@ -130,7 +130,7 @@ Infinite scrolling :
 
 3.1 ) Navigation
 
-React Navigation is the views' navigation manager library.
+React-Navigation is a views' navigation manager library.
 
 Drawer navigator : Menu displayed on the left of your screen.
 
@@ -139,3 +139,7 @@ Tab navigator : Tab bar on the bottom of your screen.
 Stack Navigator : Stack views one on the top of another
 
 to export and to use navigation on our APP, we have to use a container called CreateAppContainer.
+
+Don't install react-native-gesture-handler if we use expo-cli.
+
+React-Navigation manages MarginTop
