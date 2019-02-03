@@ -1,27 +1,24 @@
 // Components/FilmDetail.js
 
 import React from 'react'
-import { StyleSheet, View, TextInput, Button, Text, FlatList, ActivityIndicator } from 'react-native'
-import { getFilmsFromApiWithSearchedText } from '../API/TMDBApi'
-
+import { StyleSheet, View, Text } from 'react-native'
 
 class FilmDetail extends React.Component {
-    render() {
-        return(
-            <View style={styles.main_container}>
-                <Text>Détail du film</Text>
 
-            </View>
-        )
-    }
+  render() {
+    const idFilm = this.props.navigation.state.params.idFilm
+    return (
+      <View style={styles.main_container}>
+        <Text>Detail du film { idFilm }</Text>
+      </View>
+    )
+  }
 }
 
-
 const styles = StyleSheet.create({
-    main_container : {
-        flex : 1,
-    }
+  main_container: {
+    flex: 1,
+  }
 })
-
 
 export default FilmDetail

@@ -143,3 +143,8 @@ to export and to use navigation on our APP, we have to use a container called Cr
 Don't install react-native-gesture-handler if we use expo-cli.
 
 React-Navigation manages MarginTop
+
+TouchableOpacity : component which enable the user interaction
+
+this.props.navigation.navigate('RouteName', { parameters })
+
