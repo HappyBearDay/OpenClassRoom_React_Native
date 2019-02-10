@@ -148,3 +148,16 @@ TouchableOpacity : component which enable the user interaction
 
 this.props.navigation.navigate('RouteName', { parameters })
 
+3.2 ) Component Life cycle
+
+Create = Display
+
+Delete = Hide
+
+Three kinds of Component Life cycles (/Documents/lifecycle.png ) : 
+    - Mounting : 
+        - From initalisation to displaying a component
+        - We could rewrite again the method constructor, getDerivedStateFromProps, render or componentDidMount.
+        - It's could be interesting to rewrite the method getDerivedStateFromProps depending on props.
+
+
